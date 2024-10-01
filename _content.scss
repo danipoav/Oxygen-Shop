@@ -48,6 +48,7 @@
     }
 
     &__content {
+
         &__1 {
             margin: 0 auto;
             position: relative;
@@ -56,20 +57,20 @@
 
             &--circle {
                 position: absolute;
-                left: 36%;
+                left: 33%;
                 top: 30%;
             }
 
             &--body {
                 position: absolute;
-                left: 50%;
+                left: 49%;
                 top: 30%;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
 
-            p{
+            .views {
                 position: absolute;
                 top: 55%;
                 left: 20%;
@@ -78,6 +79,134 @@
                 font-size: 20px;
                 letter-spacing: 8px;
             }
+
+            p {
+                position: absolute;
+                border: 0;
+                top: 70%;
+                left: 15%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
         }
+
+        &__2 {
+            margin: 0 auto;
+            position: relative;
+            width: 200px;
+            height: 200px;
+
+            &--circle {
+                position: absolute;
+                left: 33%;
+                top: 30%;
+            }
+
+            &--eye {
+                .large {
+                    position: absolute;
+                    top: 36%;
+                    left: 43%;
+                }
+
+                .medium {
+                    position: absolute;
+                    top: 38%;
+                    left: 53%;
+                }
+
+                .small {
+                    position: absolute;
+                    top: 42%;
+                    left: 57%;
+
+                }
+            }
+
+            .views {
+                position: absolute;
+                top: 55%;
+                left: 14%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 800;
+                font-size: 20px;
+                letter-spacing: 8px;
+            }
+
+            p {
+                position: absolute;
+                border: 0;
+                top: 70%;
+                left: 8%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
+        }
+
+        &__3 {
+            margin: 0 auto;
+            position: relative;
+            width: 200px;
+            height: 200px;
+
+            &--circle {
+                position: absolute;
+                left: 33%;
+                top: 30%;
+            }
+
+            &--box {
+                &--small {
+                    position: absolute;
+                    top: 32%;
+                    left: 53%;
+                }
+
+                &--medium {
+                    position: absolute;
+                    top: 34%;
+                    left: 51%;
+                }
+
+                &--large {
+                    position: absolute;
+                    top: 36%;
+                    left: 50%;
+                }
+
+                &--box {
+                    position: absolute;
+                    top: 38%;
+                    left: 50%;
+                }
+            }
+
+            .views {
+                position: absolute;
+                top: 55%;
+                left: 25%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 800;
+                font-size: 20px;
+                letter-spacing: 8px;
+            }
+
+            p {
+                position: absolute;
+                border: 0;
+                top: 70%;
+                left: 10%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 300;
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
+        }
+
+        
     }
 }
