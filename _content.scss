@@ -206,7 +206,84 @@
                 letter-spacing: 3px;
             }
         }
+    }
+}
 
-        
+.info {
+    background-color: #F7F7F7;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 2em 0;
+
+    &__section {
+        margin: 10% 10%;
+        background-color: white;
+        padding: 20px;
+
+        &__box {
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            display: inline-block;
+            max-width: 400px;
+            box-sizing: border-box;
+
+            &--mac {
+                position: relative;
+                z-index: 1;
+
+                &--red {
+                    position: absolute;
+                    top: 0%;
+                    left: 50%;
+                }
+            }
+
+            &--phone {
+                position: relative;
+                z-index: 1;
+
+                &--blue {
+                    position: absolute;
+                    top: 0%;
+                    left: 15%;
+                }
+            }
+
+            &--trumpet {
+                position: relative;
+                z-index: 1;
+                top: 10%;
+                overflow: hidden;
+
+
+                &--green {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    overflow: hidden;
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+
+        }
+
+        h1 {
+            font-family: "Raleway", sans-serif;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 35px;
+            margin: 10px 0;
+        }
+
+        p {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+        }
     }
 }

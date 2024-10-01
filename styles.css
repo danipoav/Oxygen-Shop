@@ -195,4 +195,71 @@ body {
   font-weight: 300;
   font-size: 20px;
   letter-spacing: 3px;
+}
+
+.info {
+  background-color: #F7F7F7;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1em;
+  margin: 2em 0;
+}
+.info__section {
+  margin: 10% 10%;
+  background-color: white;
+  padding: 20px;
+}
+.info__section__box {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+.info__section__box--mac {
+  position: relative;
+  z-index: 1;
+}
+.info__section__box--mac--red {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+}
+.info__section__box--phone {
+  position: relative;
+  z-index: 1;
+}
+.info__section__box--phone--blue {
+  position: absolute;
+  top: 0%;
+  left: 15%;
+}
+.info__section__box--trumpet {
+  position: relative;
+  z-index: 1;
+  top: 10%;
+  overflow: hidden;
+}
+.info__section__box--trumpet--green {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+.info__section h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  margin: 10px 0;
+}
+.info__section p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
 }/*# sourceMappingURL=styles.css.map */
