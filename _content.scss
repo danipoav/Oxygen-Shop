@@ -519,7 +519,8 @@
 
 .form {
     box-sizing: border-box;
-    margin: 10% 10%;
+    margin: 15% 10%;
+    margin-bottom: 10%;
 
     &__introduction {
         width: 100%;
@@ -622,39 +623,5 @@
             }
 
         }
-    }
-}
-
-.footer {
-    box-sizing: border-box;
-    padding: 0 10%;
-
-
-    &__section {
-        width: 49%;
-        display: inline-block;
-        text-align: center;
-        position: relative;
-
-        h1 {
-            font-family: "Raleway", sans-serif;
-            font-weight: 300;
-            font-size: 26px;
-            line-height: 30px;
-            color: #08A6E4;
-            display: inline-block;
-        }
-    }
-
-    p {
-        font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 11px;
-        line-height: 14px;
-        display: inline-block;
-    }
-
-    img {
-        display: inline-block;
     }
 }

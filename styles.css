@@ -461,7 +461,8 @@ body {
 
 .form {
   box-sizing: border-box;
-  margin: 10% 10%;
+  margin: 15% 10%;
+  margin-bottom: 10%;
 }
 .form__introduction {
   width: 100%;
@@ -548,12 +549,20 @@ body {
 .footer {
   box-sizing: border-box;
   padding: 0 10%;
+  width: 100%;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.15);
 }
 .footer__section {
-  width: 49%;
+  width: 59%;
   display: inline-block;
-  text-align: center;
+  text-align: start;
   position: relative;
+}
+.footer__section.logo {
+  width: 39%;
+  text-align: end;
+  vertical-align: middle;
+  margin-bottom: 1.5em;
 }
 .footer__section h1 {
   font-family: "Raleway", sans-serif;
@@ -562,6 +571,9 @@ body {
   line-height: 30px;
   color: #08A6E4;
   display: inline-block;
+  margin: 0;
+  margin-top: 15px;
+  vertical-align: middle;
 }
 .footer p {
   font-family: "Open Sans", sans-serif;
@@ -569,7 +581,11 @@ body {
   font-size: 11px;
   line-height: 14px;
   display: inline-block;
+  margin: 0;
+  vertical-align: middle;
 }
 .footer img {
   display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
 }/*# sourceMappingURL=styles.css.map */
