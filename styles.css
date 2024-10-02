@@ -99,7 +99,7 @@ body {
   top: 70%;
   left: 15%;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   letter-spacing: 3px;
 }
@@ -144,7 +144,7 @@ body {
   top: 70%;
   left: 8%;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   letter-spacing: 3px;
 }
@@ -194,7 +194,7 @@ body {
   top: 70%;
   left: 10%;
   font-family: "Raleway", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
   letter-spacing: 3px;
 }
@@ -279,11 +279,29 @@ body {
 .pricing__content {
   width: 100%;
 }
+.pricing__content button {
+  border-radius: 23px;
+  padding: 20px 70px;
+  transform: translateY(-15%);
+  border: none;
+  color: white;
+}
+.pricing__content button.red {
+  background-color: #EB476E;
+  transform: translateY(-30%);
+}
+.pricing__content button.blue {
+  background-color: #07ACE6;
+}
+.pricing__content button.green {
+  background-color: #55DFB4;
+}
 .pricing__content__red {
   border: 1px solid #FB3B64;
   margin: 10%;
   border-radius: 1em;
   margin-bottom: 15%;
+  height: 250px;
 }
 .pricing__content__red__half {
   width: 49%;
@@ -318,12 +336,19 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+  text-align: start;
+  width: 100%;
+}
+.pricing__content__red__half ul li .checkbox,
+.pricing__content__red__half ul li .cross {
+  margin-right: 5px;
 }
 .pricing__content__blue {
   border: 1px solid #07ACE6;
   margin: 10%;
   border-radius: 1em;
   margin-bottom: 15%;
+  height: 250px;
 }
 .pricing__content__blue__half {
   width: 49%;
@@ -369,12 +394,19 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+  text-align: start;
+  width: 100%;
+}
+.pricing__content__blue__half ul li .checkbox,
+.pricing__content__blue__half ul li .cross {
+  margin-right: 5px;
 }
 .pricing__content__green {
   border: 1px solid #55DFB4;
   margin: 10%;
   border-radius: 1em;
   margin-bottom: 15%;
+  height: 250px;
 }
 .pricing__content__green__half {
   width: 49%;
@@ -420,6 +452,11 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
+  text-align: start;
+  width: 100%;
+}
+.pricing__content__green__half ul li .checkbox {
+  margin-right: 10px;
 }
 
 .form {
@@ -479,11 +516,12 @@ body {
 .form__data__checkbox input {
   width: 24px;
   height: 24px;
-  margin: 0 1em;
+  margin-right: 1em;
+  margin-bottom: 12em;
 }
 .form__data__checkbox label {
-  display: inline-block;
-  margin: 1em;
+  position: absolute;
+  margin-right: 4em;
   text-align: justify;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -510,6 +548,12 @@ body {
 .footer {
   box-sizing: border-box;
   padding: 0 10%;
+}
+.footer__section {
+  width: 49%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
 }
 .footer__section h1 {
   font-family: "Raleway", sans-serif;

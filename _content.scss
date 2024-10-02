@@ -91,7 +91,7 @@
                 top: 70%;
                 left: 15%;
                 font-family: "Raleway", sans-serif;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 20px;
                 letter-spacing: 3px;
             }
@@ -146,7 +146,7 @@
                 top: 70%;
                 left: 8%;
                 font-family: "Raleway", sans-serif;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 20px;
                 letter-spacing: 3px;
             }
@@ -206,7 +206,7 @@
                 top: 70%;
                 left: 10%;
                 font-family: "Raleway", sans-serif;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: 20px;
                 letter-spacing: 3px;
             }
@@ -271,6 +271,7 @@
                     overflow: hidden;
                     width: 100%;
                     max-width: 100%;
+
                 }
             }
 
@@ -307,11 +308,33 @@
     &__content {
         width: 100%;
 
+        button {
+            border-radius: 23px;
+            padding: 20px 70px;
+            transform: translateY(-15%);
+            border: none;
+            color: white;
+
+            &.red {
+                background-color: #EB476E;
+                transform: translateY(-30%);
+            }
+
+            &.blue {
+                background-color: #07ACE6;
+            }
+
+            &.green {
+                background-color: #55DFB4;
+            }
+        }
+
         &__red {
             border: 1px solid #FB3B64;
             margin: 10%;
             border-radius: 1em;
             margin-bottom: 15%;
+            height: 250px;
 
             &__half {
                 width: 49%;
@@ -348,6 +371,13 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 19px;
+                        text-align: start;
+                        width: 100%;
+
+                        .checkbox,
+                        .cross {
+                            margin-right: 5px;
+                        }
                     }
                 }
             }
@@ -358,6 +388,7 @@
             margin: 10%;
             border-radius: 1em;
             margin-bottom: 15%;
+            height: 250px;
 
             &__half {
                 width: 49%;
@@ -406,6 +437,13 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 19px;
+                        text-align: start;
+                        width: 100%;
+
+                        .checkbox,
+                        .cross {
+                            margin-right: 5px;
+                        }
                     }
                 }
             }
@@ -416,6 +454,7 @@
             margin: 10%;
             border-radius: 1em;
             margin-bottom: 15%;
+            height: 250px;
 
             &__half {
                 width: 49%;
@@ -464,6 +503,12 @@
                         font-weight: 400;
                         font-size: 14px;
                         line-height: 19px;
+                        text-align: start;
+                        width: 100%;
+
+                        .checkbox {
+                            margin-right: 10px;
+                        }
                     }
                 }
             }
@@ -542,12 +587,13 @@
             input {
                 width: 24px;
                 height: 24px;
-                margin: 0 1em;
+                margin-right: 1em;
+                margin-bottom: 12em;
             }
 
             label {
-                display: inline-block;
-                margin: 1em;
+                position: absolute;
+                margin-right: 4em;
                 text-align: justify;
                 font-family: "Open Sans", sans-serif;
                 font-weight: 400;
@@ -582,10 +628,13 @@
 .footer {
     box-sizing: border-box;
     padding: 0 10%;
-    
+
 
     &__section {
-        
+        width: 49%;
+        display: inline-block;
+        text-align: center;
+        position: relative;
 
         h1 {
             font-family: "Raleway", sans-serif;
@@ -605,7 +654,7 @@
         display: inline-block;
     }
 
-    img{
+    img {
         display: inline-block;
     }
 }
