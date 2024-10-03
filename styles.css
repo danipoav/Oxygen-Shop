@@ -48,8 +48,8 @@ body {
 }
 
 .background-img {
-  background-image: url("images/Background 1.png");
-  background-size: contain;
+  background-image: url("images/BackgroundLaptop.png");
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100vw;
   height: 40vh;
@@ -460,4 +460,43 @@ body {
   display: inline-block;
   margin: 0;
   vertical-align: middle;
+}
+
+@media only screen and (min-width: 1000px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    min-width: 320px;
+  }
+  .section__sell {
+    margin-bottom: 5em;
+  }
+  .section__sell__button.open {
+    width: 500px;
+  }
+  .background-img {
+    width: 100%;
+    height: 500px;
+  }
+  .sales {
+    margin-top: 5em;
+  }
+  .sales__content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10em;
+  }
+  .sales__content__item {
+    margin: 0 5em;
+    margin-top: 3em;
+  }
+  .sales__content__item .views {
+    top: 65%;
+  }
+  .sales__content__item p {
+    top: 80%;
+  }
 }/*# sourceMappingURL=styles.css.map */
