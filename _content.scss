@@ -1,4 +1,6 @@
-.section {
+//Section sell
+
+.section__sell {
     margin: 5em auto;
     box-sizing: border-box;
     text-align: center;
@@ -19,17 +21,21 @@
         margin: 2em 0;
     }
 
-    &__openButton {
-        background-color: #08A6E4;
-        color: white;
-        border-radius: 40px;
-        padding: 1.5em 2em;
-        width: 100%;
-        border: none;
+    &__button {
+        &.open {
+            background-color: #08A6E4;
+            color: white;
+            border-radius: 40px;
+            padding: 1.5em 2em;
+            width: 100%;
+            border: none;
+        }
     }
 }
 
-.background {
+//section background
+
+.background-img {
     background-image: url('images/Background 1.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -38,7 +44,9 @@
     background-position: center;
 }
 
-.article {
+//section sell
+
+.sales {
     text-align: center;
     margin: 0 10%;
 
@@ -49,20 +57,45 @@
     }
 
     &__content {
+        margin-bottom: 15%;
 
-        &__1 {
+        &__item {
             margin: 0 auto;
             position: relative;
             width: 200px;
             height: 200px;
 
-            &--circle {
+            .views {
+                position: absolute;
+                top: 55%;
+                left: 5%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 800;
+                font-size: 20px;
+                letter-spacing: 8px;
+            }
+
+            p {
+                position: absolute;
+                border: 0;
+                top: 70%;
+                left: 0%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: 3px;
+                width: 100%;
+            }
+
+            //Red Item
+
+            &--redCircle {
                 position: absolute;
                 left: 33%;
                 top: 30%;
             }
 
-            &--body {
+            &--redBody {
                 .body {
                     position: absolute;
                     top: 50%;
@@ -75,41 +108,15 @@
                 }
             }
 
-            .views {
-                position: absolute;
-                top: 55%;
-                left: 20%;
-                font-family: "Raleway", sans-serif;
-                font-weight: 800;
-                font-size: 20px;
-                letter-spacing: 8px;
-            }
+            //Blue circle
 
-            p {
-                position: absolute;
-                border: 0;
-                top: 70%;
-                left: 15%;
-                font-family: "Raleway", sans-serif;
-                font-weight: 400;
-                font-size: 20px;
-                letter-spacing: 3px;
-            }
-        }
-
-        &__2 {
-            margin: 0 auto;
-            position: relative;
-            width: 200px;
-            height: 200px;
-
-            &--circle {
+            &--blueCircle {
                 position: absolute;
                 left: 33%;
                 top: 30%;
             }
 
-            &--eye {
+            &--blueEye {
                 .large {
                     position: absolute;
                     top: 36%;
@@ -130,41 +137,15 @@
                 }
             }
 
-            .views {
-                position: absolute;
-                top: 55%;
-                left: 14%;
-                font-family: "Raleway", sans-serif;
-                font-weight: 800;
-                font-size: 20px;
-                letter-spacing: 8px;
-            }
+            //greenCircle
 
-            p {
-                position: absolute;
-                border: 0;
-                top: 70%;
-                left: 8%;
-                font-family: "Raleway", sans-serif;
-                font-weight: 400;
-                font-size: 20px;
-                letter-spacing: 3px;
-            }
-        }
-
-        &__3 {
-            margin: 0 auto;
-            position: relative;
-            width: 200px;
-            height: 200px;
-
-            &--circle {
+            &--greenCircle {
                 position: absolute;
                 left: 33%;
                 top: 30%;
             }
 
-            &--box {
+            &--greenBox {
                 &--small {
                     position: absolute;
                     top: 32%;
@@ -190,29 +171,11 @@
                 }
             }
 
-            .views {
-                position: absolute;
-                top: 55%;
-                left: 25%;
-                font-family: "Raleway", sans-serif;
-                font-weight: 800;
-                font-size: 20px;
-                letter-spacing: 8px;
-            }
-
-            p {
-                position: absolute;
-                border: 0;
-                top: 70%;
-                left: 10%;
-                font-family: "Raleway", sans-serif;
-                font-weight: 400;
-                font-size: 20px;
-                letter-spacing: 3px;
-            }
         }
     }
 }
+
+//section info 
 
 .info {
     background-color: #F7F7F7;
@@ -224,11 +187,37 @@
     &__section {
         margin: 10% 10%;
         background-color: white;
-        padding: 20px;
 
-        &__box {
+        //info text
+
+        &__text {
+            padding: 20px;
+            padding-top: 0;
+
+            h1 {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 35px;
+                margin: 10px 0;
+            }
+
+            p {
+                font-family: "Open Sans", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: justify;
+
+            }
+        }
+
+        //info image mac
+
+        &__item {
             text-align: center;
-            padding: 10px;
+            padding: 30px 25px;
+            padding-bottom: 10px;
             position: relative;
             width: 100%;
             display: inline-block;
@@ -241,10 +230,12 @@
 
                 &--red {
                     position: absolute;
-                    top: 0%;
+                    top: 7%;
                     left: 50%;
                 }
             }
+
+            //info image phone
 
             &--phone {
                 position: relative;
@@ -252,47 +243,29 @@
 
                 &--blue {
                     position: absolute;
-                    top: 0%;
-                    left: 15%;
+                    top: 10%;
+                    left: 20%;
                 }
+            }
+
+            //info image trumpet
+
+            &.green {
+                background-color: #55DFB4;
             }
 
             &--trumpet {
                 position: relative;
                 z-index: 1;
-                top: 10%;
-                overflow: hidden;
-
-
-                &--green {
-                    position: absolute;
-                    top: 0%;
-                    left: 0%;
-                    overflow: hidden;
-                    width: 100%;
-                    max-width: 100%;
-
-                }
+                left: -25%;
+                height: 180px;
             }
 
         }
-
-        h1 {
-            font-family: "Raleway", sans-serif;
-            font-weight: 400;
-            font-size: 30px;
-            line-height: 35px;
-            margin: 10px 0;
-        }
-
-        p {
-            font-family: "Open Sans", sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 19px;
-        }
     }
 }
+
+//section pricing
 
 .pricing {
     text-align: center;
@@ -307,6 +280,8 @@
 
     &__content {
         width: 100%;
+
+        //princing buttons
 
         button {
             border-radius: 23px;
@@ -329,12 +304,25 @@
             }
         }
 
-        &__red {
-            border: 1px solid #FB3B64;
+        //pricing items
+
+        &__item {
             margin: 10%;
             border-radius: 1em;
             margin-bottom: 15%;
             height: 250px;
+
+            &.red {
+                border: 1px solid #EB476E;
+            }
+
+            &.blue {
+                border: 1px solid #07ACE6;
+            }
+
+            &.green {
+                border: 1px solid #55DFB4;
+            }
 
             &__half {
                 width: 49%;
@@ -342,61 +330,20 @@
                 text-align: center;
                 position: relative;
 
-                h1 {
+                &--title {
                     font-family: "Raleway", sans-serif;
                     font-weight: 700;
                     font-size: 20px;
                     line-height: 24px;
-                }
+                    margin: 0;
 
-                p {
-                    position: relative;
-                    top: -50px;
-                    font-family: "Open Sans", sans-serif;
-                    font-weight: 300;
-                    font-size: 46px;
-                    line-height: 64px;
-                    color: #FB3B64;
-                }
-
-                ul {
-                    text-align: center;
-                    list-style: none;
-                    padding: 0;
-                    margin: 3em 0;
-
-                    li {
-                        font-family: "Open Sans", sans-serif;
-                        margin: 10px;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 19px;
-                        text-align: start;
-                        width: 100%;
-
-                        .checkbox,
-                        .cross {
-                            margin-right: 5px;
-                        }
+                    &.red {
+                        margin-bottom: 25px;
                     }
+
                 }
-            }
-        }
 
-        &__blue {
-            border: 1px solid #07ACE6;
-            margin: 10%;
-            border-radius: 1em;
-            margin-bottom: 15%;
-            height: 250px;
-
-            &__half {
-                width: 49%;
-                display: inline-block;
-                text-align: center;
-                position: relative;
-
-                .price {
+                &--price {
                     margin: 0;
                     position: relative;
                     top: -50px;
@@ -405,18 +352,22 @@
                     font-weight: 300;
                     font-size: 46px;
                     line-height: 64px;
-                    color: #07ACE6;
+
+                    &.red {
+                        color: #EB476E;
+                        top: -30px;
+                    }
+
+                    &.blue {
+                        color: #07ACE6;
+                    }
+
+                    &.green {
+                        color: #55DFB4;
+                    }
                 }
 
-                h1 {
-                    font-family: "Raleway", sans-serif;
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 24px;
-                    margin: 0;
-                }
-
-                p {
+                &--text {
                     position: relative;
                     top: -15px;
                     font-family: "Raleway", sans-serif;
@@ -448,81 +399,17 @@
                 }
             }
         }
-
-        &__green {
-            border: 1px solid #55DFB4;
-            margin: 10%;
-            border-radius: 1em;
-            margin-bottom: 15%;
-            height: 250px;
-
-            &__half {
-                width: 49%;
-                display: inline-block;
-                text-align: center;
-                position: relative;
-
-                .price {
-                    margin: 0;
-                    position: relative;
-                    top: -50px;
-                    top: 0px;
-                    font-family: "Open Sans", sans-serif;
-                    font-weight: 300;
-                    font-size: 46px;
-                    line-height: 64px;
-                    color: #55DFB4;
-                }
-
-                h1 {
-                    font-family: "Raleway", sans-serif;
-                    font-weight: 700;
-                    font-size: 20px;
-                    line-height: 24px;
-                    margin: 0;
-                }
-
-                p {
-                    position: relative;
-                    top: -15px;
-                    font-family: "Raleway", sans-serif;
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 14px;
-                }
-
-                ul {
-                    text-align: center;
-                    list-style: none;
-                    padding: 0;
-                    margin: 3em 0;
-
-                    li {
-                        font-family: "Open Sans", sans-serif;
-                        margin: 10px;
-                        font-weight: 400;
-                        font-size: 14px;
-                        line-height: 19px;
-                        text-align: start;
-                        width: 100%;
-
-                        .checkbox {
-                            margin-right: 10px;
-                        }
-                    }
-                }
-            }
-        }
-
     }
 }
+
+//section form
 
 .form {
     box-sizing: border-box;
     margin: 15% 10%;
     margin-bottom: 10%;
 
-    &__introduction {
+    &__item {
         width: 100%;
         margin-bottom: 3em;
 
@@ -532,6 +419,7 @@
             font-weight: 400;
             font-size: 40px;
             line-height: 49px;
+            margin-bottom: 0;
         }
 
         &--text {
