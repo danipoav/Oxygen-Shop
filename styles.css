@@ -499,4 +499,45 @@ body {
   .sales__content__item p {
     top: 80%;
   }
+  .info__section {
+    margin: 5em 20em;
+    display: flex;
+    height: 300px;
+  }
+  .info__section__text {
+    margin: 5em 0;
+  }
+  .pricing__title {
+    margin-top: 3em;
+  }
+  .pricing__content {
+    display: flex;
+    justify-content: center;
+  }
+  .pricing__content button {
+    transform: translateY(30px);
+  }
+  .pricing__content__item {
+    margin: 5em 2em;
+    height: auto;
+    width: 400px;
+  }
+  .pricing__content__item__half {
+    width: 100%;
+    text-align: center;
+    position: static;
+  }
+  .pricing__content__item__half--title {
+    margin-top: 3em;
+  }
+  .pricing__content__item__half--price.red {
+    margin-top: 0.5em;
+  }
+  .pricing__content__item__half--text {
+    margin-top: 1em;
+  }
+  .pricing__content__item__half ul li {
+    text-align: center;
+    margin: 1.5em 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
