@@ -290,6 +290,7 @@
             transform: translateY(-15%);
             border: none;
             color: white;
+            cursor: pointer;
 
             &.red {
                 background-color: #EB476E;
@@ -499,6 +500,7 @@
             text-align: right;
 
             button {
+                cursor: pointer;
                 padding: 20px 90px;
                 background-color: #08A6E4;
                 color: white;

@@ -240,6 +240,7 @@ body {
   transform: translateY(-15%);
   border: none;
   color: white;
+  cursor: pointer;
 }
 .pricing__content button.red {
   background-color: #EB476E;
@@ -406,6 +407,7 @@ body {
   text-align: right;
 }
 .form__data--button-container button {
+  cursor: pointer;
   padding: 20px 90px;
   background-color: #08A6E4;
   color: white;
@@ -575,6 +577,9 @@ body {
   }
   .pricing__content button {
     transform: translateY(30px);
+  }
+  .pricing__content button.red {
+    transform: translateY(35px);
   }
   .pricing__content__item {
     margin: 5em 2em;

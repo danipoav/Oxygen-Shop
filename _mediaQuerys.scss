@@ -28,7 +28,7 @@
         height: 500px;
     }
 
-    //section sell
+    //section sales
 
     .sales {
         margin-top: 5em;
@@ -166,6 +166,9 @@
 
             button {
                 transform: translateY(30px);
+                &.red{
+                    transform: translateY(35px);
+                }
             }
 
             &__item {
