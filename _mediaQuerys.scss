@@ -123,4 +123,55 @@
         }
     }
 
+    //section form
+
+    .form {
+        margin: 5em 30em;
+        display: flex;
+
+        &__item {
+            width: 50%;
+
+            &--text {
+                margin: 2em 0;
+
+            }
+
+            &__query {
+                display: flex;
+            }
+
+            &__info {
+                p {
+                    margin-right: 1em;
+                }
+            }
+
+        }
+
+        &__data {
+            width: 50%;
+
+            &__checkbox {
+                display: flex;
+
+                input {
+                    margin-bottom: 0;
+                    width: 48%;
+                }
+
+                label {
+                    position: static;
+                    margin: 0;
+                }
+            }
+
+            &--button-container {
+                button {
+                    margin-top: 3em;
+                }
+            }
+        }
+    }
+
 }

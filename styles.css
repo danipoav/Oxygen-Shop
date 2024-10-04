@@ -540,4 +540,37 @@ body {
     text-align: center;
     margin: 1.5em 0;
   }
+  .form {
+    margin: 5em 30em;
+    display: flex;
+  }
+  .form__item {
+    width: 50%;
+  }
+  .form__item--text {
+    margin: 2em 0;
+  }
+  .form__item__query {
+    display: flex;
+  }
+  .form__item__info p {
+    margin-right: 1em;
+  }
+  .form__data {
+    width: 50%;
+  }
+  .form__data__checkbox {
+    display: flex;
+  }
+  .form__data__checkbox input {
+    margin-bottom: 0;
+    width: 48%;
+  }
+  .form__data__checkbox label {
+    position: static;
+    margin: 0;
+  }
+  .form__data--button-container button {
+    margin-top: 3em;
+  }
 }/*# sourceMappingURL=styles.css.map */
