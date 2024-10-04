@@ -500,12 +500,71 @@ body {
     top: 80%;
   }
   .info__section {
-    margin: 5em 20em;
+    margin: 5em 25em;
     display: flex;
-    height: 300px;
+    height: 350px;
+    justify-content: space-between;
+  }
+  .info__section.red {
+    flex-direction: row-reverse;
   }
   .info__section__text {
     margin: 5em 0;
+    width: 420px;
+    margin-left: 1.5em;
+    border-bottom: 4px solid #EB476E;
+  }
+  .info__section__text.blue {
+    margin-right: 5em;
+    margin-top: 3em;
+    margin-left: 0;
+    padding-left: 0;
+    height: 220px;
+    border-bottom: 4px solid #07ACE6;
+  }
+  .info__section__text.blue h1 {
+    width: 70%;
+  }
+  .info__section__text.green {
+    border-bottom: 4px solid #55DFB4;
+    height: 220px;
+    margin-top: 3em;
+  }
+  .info__section__text h1 {
+    margin-bottom: 1em;
+  }
+  .info__section__item {
+    margin-right: 7em;
+    margin-top: 3.5em;
+  }
+  .info__section__item.blue {
+    margin-top: 0;
+    margin-left: 3em;
+  }
+  .info__section__item.green {
+    margin: 0;
+    width: 100%;
+  }
+  .info__section__item--mac--red {
+    width: 100%;
+    max-width: 200px;
+    top: -5%;
+    left: 47%;
+  }
+  .info__section__item--phone--blue {
+    width: 100%;
+    max-width: 280px;
+    top: 3%;
+    left: 5%;
+  }
+  .info__section__item--trumpet {
+    left: 0%;
+    top: 15%;
+  }
+  .info__section__item img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
   }
   .pricing__title {
     margin-top: 3em;
