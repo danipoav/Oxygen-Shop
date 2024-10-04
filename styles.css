@@ -39,6 +39,7 @@ body {
   margin: 2em 0;
 }
 .section__sell__button.open {
+  cursor: pointer;
   background-color: #08A6E4;
   color: white;
   border-radius: 40px;

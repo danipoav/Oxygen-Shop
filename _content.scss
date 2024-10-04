@@ -23,6 +23,7 @@
 
     &__button {
         &.open {
+            cursor: pointer;
             background-color: #08A6E4;
             color: white;
             border-radius: 40px;
