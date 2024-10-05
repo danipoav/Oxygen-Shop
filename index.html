@@ -17,6 +17,11 @@
 </head>
 
 <body>
+    <!--
+     Meter el section sell y la imagen en el header
+     Cerrar las img />
+    Maquetar checkbox
+     -->
     <header class="header">
         <h1 class="header__title">OXYGENShop</h1>
     </header>
@@ -36,7 +41,7 @@
 
             <div class="sales__content__item">
                 <div class="sales__content__item--redCircle">
-                    <img src="images/Ellipse 1.png" alt="RedCircle">
+                    <img src="images/Ellipse 1.png" alt="RedCircle" />
                 </div>
                 <div class="sales__content__item--redBody">
                     <img class="head" src="images/VectorHead.png" alt="Head">
@@ -47,6 +52,8 @@
             </div>
 
             <div class="sales__content__item">
+                <!-- cambiar modificadores
+                 quitar las imagenes de los divs -->
                 <div class="sales__content__item--blueCircle">
                     <img src="images/Ellipse 2.png" alt="BlueCircle">
                 </div>
@@ -76,63 +83,65 @@
         </div>
     </article>
 
-    <article class="info">
-        <section class="info__section red">
-            <div class="info__section__item">
-                <div class="info__section__item--mac">
+    <section class="info">
+        <article class="info__article red">
+            <div class="info__article__item">
+                <div class="info__article__item--mac">
                     <img src="images/Macbook2 2.png" alt="Mac">
                 </div>
-                <div class="info__section__item--mac--red">
+                <div class="info__article__item--mac--red">
                     <img src="images/Rectangle 5.png" alt="rectangle">
                 </div>
             </div>
-            <div class="info__section__text">
+            <div class="info__article__text">
                 <h1>Be always first</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
-        </section>
+        </article>
 
-        <section class="info__section">
-            <div class="info__section__item blue">
-                <div class="info__section__item--phone">
+        <article class="info__article">
+            <div class="info__article__item blue">
+                <div class="info__article__item--phone">
                     <img src="images/iPhone2 2.png" alt="iPhone2">
                 </div>
-                <div class="info__section__item--phone--blue">
+                <div class="info__article__item--phone--blue">
                     <img src="images/Ellipse 3.png" alt="bluecircle">
                 </div>
             </div>
-            <div class="info__section__text blue">
+            <div class="info__article__text blue">
                 <h1>Your shop is where you are!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
-        </section>
+        </article>
 
-        <section class="info__section">
-            <div class="info__section__text green">
+        <article class="info__article">
+            <div class="info__article__text green">
                 <h1>Increase recognition your brand!</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et
                     dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
-            <div class="info__section__item green">
-                <div class="info__section__item--trumpet">
+            <div class="info__article__item green">
+
+                <!-- quitar este div -->
+                <div class="info__article__item--trumpet">
                     <img src="images/Trumpet 2.png" alt="Mac">
                 </div>
             </div>
-        </section>
-    </article>
+        </article>
+    </section>
 
-    <article class="pricing">
+    <section class="pricing">
 
         <h1 class="pricing__title">Pricing</h1>
 
         <div class="pricing__content">
 
-            <section class="pricing__content__item red">
+            <article class="pricing__content__item red">
                 <div class="pricing__content__item__half">
                     <h1 class="pricing__content__item__half--title red">Basic</h1>
                     <p class="pricing__content__item__half--price red">$0</p>
@@ -147,9 +156,9 @@
                     </ul>
                 </div>
                 <button class="button red">Begin</button>
-            </section>
+            </article>
 
-            <section class="pricing__content__item blue">
+            <article class="pricing__content__item blue">
                 <div class="pricing__content__item__half">
                     <h1 class="pricing__content__item__half--title">Professional</h1>
                     <p class="pricing__content__item__half--price blue">$25</p>
@@ -165,9 +174,9 @@
                     </ul>
                 </div>
                 <button class="button blue">Begin</button>
-            </section>
+            </article>
 
-            <section class="pricing__content__item green">
+            <article class="pricing__content__item green">
                 <div class="pricing__content__item__half">
                     <h1 class="pricing__content__item__half--title">Premium</h1>
                     <p class="pricing__content__item__half--price green">$60</p>
@@ -183,13 +192,13 @@
                     </ul>
                 </div>
                 <button class="button green">Begin</button>
-            </section>
+            </article>
 
         </div>
 
-    </article>
+    </section>
 
-    <article class="form">
+    <section class="form">
 
         <div class="form__item">
             <h1 class="form__item--title">
@@ -230,7 +239,7 @@
                 <button>Send</button>
             </div>
         </form>
-    </article>
+    </section>
 
     <footer class="footer">
 

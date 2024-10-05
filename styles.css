@@ -162,29 +162,29 @@ body {
   padding: 1em;
   margin: 2em 0;
 }
-.info__section {
+.info__article {
   margin: 10% 10%;
   background-color: white;
 }
-.info__section__text {
+.info__article__text {
   padding: 20px;
   padding-top: 0;
 }
-.info__section__text h1 {
+.info__article__text h1 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 30px;
   line-height: 35px;
   margin: 10px 0;
 }
-.info__section__text p {
+.info__article__text p {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 19px;
   text-align: justify;
 }
-.info__section__item {
+.info__article__item {
   text-align: center;
   padding: 30px 25px;
   padding-bottom: 10px;
@@ -194,28 +194,28 @@ body {
   max-width: 400px;
   box-sizing: border-box;
 }
-.info__section__item--mac {
+.info__article__item--mac {
   position: relative;
   z-index: 1;
 }
-.info__section__item--mac--red {
+.info__article__item--mac--red {
   position: absolute;
   top: 7%;
   left: 50%;
 }
-.info__section__item--phone {
+.info__article__item--phone {
   position: relative;
   z-index: 1;
 }
-.info__section__item--phone--blue {
+.info__article__item--phone--blue {
   position: absolute;
   top: 10%;
   left: 20%;
 }
-.info__section__item.green {
+.info__article__item.green {
   background-color: #55DFB4;
 }
-.info__section__item--trumpet {
+.info__article__item--trumpet {
   position: relative;
   z-index: 1;
   left: -25%;
@@ -502,22 +502,22 @@ body {
   .sales__content__item p {
     top: 80%;
   }
-  .info__section {
+  .info__article {
     margin: 5em 25em;
     display: flex;
     height: 350px;
     justify-content: space-between;
   }
-  .info__section.red {
+  .info__article.red {
     flex-direction: row-reverse;
   }
-  .info__section__text {
+  .info__article__text {
     margin: 5em 0;
     width: 420px;
     margin-left: 1.5em;
     border-bottom: 4px solid #EB476E;
   }
-  .info__section__text.blue {
+  .info__article__text.blue {
     margin-right: 5em;
     margin-top: 3em;
     margin-left: 0;
@@ -525,46 +525,46 @@ body {
     height: 220px;
     border-bottom: 4px solid #07ACE6;
   }
-  .info__section__text.blue h1 {
+  .info__article__text.blue h1 {
     width: 70%;
   }
-  .info__section__text.green {
+  .info__article__text.green {
     border-bottom: 4px solid #55DFB4;
     height: 220px;
     margin-top: 3em;
   }
-  .info__section__text h1 {
+  .info__article__text h1 {
     margin-bottom: 1em;
   }
-  .info__section__item {
+  .info__article__item {
     margin-right: 7em;
     margin-top: 3.5em;
   }
-  .info__section__item.blue {
+  .info__article__item.blue {
     margin-top: 0;
     margin-left: 3em;
   }
-  .info__section__item.green {
+  .info__article__item.green {
     margin: 0;
     width: 100%;
   }
-  .info__section__item--mac--red {
+  .info__article__item--mac--red {
     width: 100%;
     max-width: 200px;
     top: -5%;
     left: 47%;
   }
-  .info__section__item--phone--blue {
+  .info__article__item--phone--blue {
     width: 100%;
     max-width: 280px;
     top: 3%;
     left: 5%;
   }
-  .info__section__item--trumpet {
+  .info__article__item--trumpet {
     left: 0%;
     top: 15%;
   }
-  .info__section__item img {
+  .info__article__item img {
     width: 100%;
     max-width: 500px;
     height: auto;
