@@ -108,11 +108,7 @@
                 &.blue {
                     margin-top: 0;
                     margin-left: 3em;
-                }
-
-                &.green {
-                    margin: 0;
-                    width: 100%;
+                    height: 200px;
                 }
 
                 &--mac {
@@ -137,9 +133,14 @@
                     }
                 }
 
-                &--trumpet {
-                    left: 0%;
-                    top: 15%;
+                &.green {
+                    margin: 0;
+                    width: 100%;
+
+                    img {
+                        margin-top: 15%;
+                        height: auto
+                    }
                 }
 
                 img {
@@ -166,7 +167,8 @@
 
             button {
                 transform: translateY(30px);
-                &.red{
+
+                &.red {
                     transform: translateY(35px);
                 }
             }
