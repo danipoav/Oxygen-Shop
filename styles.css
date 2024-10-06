@@ -52,7 +52,7 @@ body {
   background-image: url("images/BackgroundLaptop.png");
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
+  width: 100vw;
   height: 265px;
   background-position: center;
 }
@@ -581,6 +581,9 @@ body {
   }
   .pricing__content button.red {
     transform: translateY(35px);
+  }
+  .pricing__content__item:hover {
+    transform: scale(1.1);
   }
   .pricing__content__item {
     margin: 5em 2em;

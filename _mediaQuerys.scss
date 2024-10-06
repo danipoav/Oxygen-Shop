@@ -156,7 +156,7 @@
     //section pricing
 
     .pricing {
-
+        
         &__title {
             margin-top: 3em;
         }
@@ -171,6 +171,11 @@
                 &.red {
                     transform: translateY(35px);
                 }
+            }
+
+            &__item:hover{
+                transform: scale(1.1);
+                
             }
 
             &__item {
