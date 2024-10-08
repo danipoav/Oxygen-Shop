@@ -135,3 +135,63 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .pricing {
+        
+        &__title {
+            margin-top: 3em;
+        }
+
+        &__content {
+            display: flex;
+            justify-content: center;
+
+            button {
+                transform: translateY(30px);
+
+                &.red {
+                    transform: translateY(35px);
+                }
+            }
+
+            &__item:hover{
+                transform: scale(1.1);
+                
+            }
+
+            &__item {
+                margin: 5em 2em;
+                height: auto;
+                width: 400px;
+
+                &__half {
+                    width: 100%;
+                    text-align: center;
+                    position: static;
+
+                    &--title {
+                        margin-top: 3em;
+                    }
+
+                    &--price {
+                        &.red {
+                            margin-top: 0.5em;
+                        }
+                    }
+
+                    &--text {
+                        margin-top: 1em;
+                    }
+
+                    ul {
+                        li {
+                            text-align: center;
+                            margin: 1.5em 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

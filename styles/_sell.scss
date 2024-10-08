@@ -33,3 +33,15 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .section__sell {
+        margin-bottom: 5em;
+
+        &__button {
+            &.open {
+                width: 500px;
+            }
+        }
+    }
+}

@@ -86,3 +86,101 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .info {
+
+        &__article {
+            margin: 5em 25em;
+            display: flex;
+            height: 350px;
+            justify-content: space-between;
+
+            &.red {
+                flex-direction: row-reverse;
+            }
+
+            &__text {
+                margin: 5em 0;
+                width: 420px;
+                margin-left: 1.5em;
+                border-bottom: 4px solid #EB476E;
+
+                &.blue {
+                    margin-right: 5em;
+                    margin-top: 3em;
+                    margin-left: 0;
+                    padding-left: 0;
+                    height: 220px;
+                    border-bottom: 4px solid #07ACE6;
+
+                    h1 {
+                        width: 70%;
+                    }
+                }
+
+                &.green {
+                    border-bottom: 4px solid #55DFB4;
+                    height: 220px;
+                    margin-top: 3em;
+                }
+
+                h1 {
+                    margin-bottom: 1em;
+                }
+
+            }
+
+            &__item {
+
+                margin-right: 7em;
+                margin-top: 3.5em;
+
+                &.blue {
+                    margin-top: 0;
+                    margin-left: 3em;
+                    height: 200px;
+                }
+
+                &--mac {
+
+
+                    &--red {
+                        width: 100%;
+                        max-width: 200px;
+                        top: -5%;
+                        left: 47%;
+                    }
+                }
+
+                &--phone {
+
+
+                    &--blue {
+                        width: 100%;
+                        max-width: 280px;
+                        top: 3%;
+                        left: 5%;
+                    }
+                }
+
+                &.green {
+                    margin: 0;
+                    width: 100%;
+
+                    img {
+                        margin-top: 15%;
+                        height: auto
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    max-width: 500px;
+                    height: auto;
+                }
+            }
+
+        }
+    }
+}

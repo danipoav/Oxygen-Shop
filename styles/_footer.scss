@@ -47,3 +47,31 @@
 
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .footer {
+        display: flex;
+
+        &__item {
+            margin-bottom: 1em;
+
+            &--title {
+                display: block;
+                margin-bottom: 5px;
+            }
+
+            &--text {
+                display: block;
+            }
+
+            &.logo {
+                margin-bottom: 0;
+
+                img {
+                    margin-top: 1.8em;
+                }
+            }
+
+        }
+    }
+}

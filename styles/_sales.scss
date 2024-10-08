@@ -129,3 +129,30 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .sales {
+        margin-top: 5em;
+
+        &__content {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10em;
+
+            &__item {
+                margin: 0 5em;
+                margin-top: 3em;
+
+                .views {
+                    top: 65%;
+                }
+
+                p {
+                    top: 80%;
+                }
+
+            }
+        }
+
+    }
+}
