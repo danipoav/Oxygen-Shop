@@ -474,6 +474,7 @@ body {
   }
   .pricing__content__item:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 15px #6495ED;
   }
   .pricing__content__item {
     margin: 5em 2em;
