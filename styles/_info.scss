@@ -94,7 +94,8 @@
             margin: 5em 25em;
             display: flex;
             height: 350px;
-            justify-content: space-between;
+            justify-content: space-around;
+            border-radius: 1px;
 
             &.red {
                 flex-direction: row-reverse;
