@@ -9,3 +9,10 @@
     height: 265px;
     background-position: center;
 }
+
+@media only screen and (min-width: 1000px) {
+    .background-img {
+        width: 100%;
+        height: 500px;
+    }
+}
