@@ -1,0 +1,88 @@
+//article info 
+
+.info {
+    background-color: #F7F7F7;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    margin: 2em 0;
+
+    &__article {
+        margin: 10% 10%;
+        background-color: white;
+
+        //info text
+
+        &__text {
+            padding: 20px;
+            padding-top: 0;
+
+
+            h1 {
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 35px;
+                margin: 10px 0;
+            }
+
+            p {
+                font-family: "Open Sans", sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+                text-align: justify;
+
+            }
+        }
+
+        //info image mac
+
+        &__item {
+            text-align: center;
+            padding: 30px 25px;
+            padding-bottom: 10px;
+            position: relative;
+            width: 100%;
+            display: inline-block;
+            max-width: 400px;
+            box-sizing: border-box;
+
+            &--mac {
+                position: relative;
+                z-index: 1;
+
+                &--red {
+                    position: absolute;
+                    top: 7%;
+                    left: 50%;
+                }
+            }
+
+            //info image phone
+
+            &--phone {
+                position: relative;
+                z-index: 1;
+
+                &--blue {
+                    position: absolute;
+                    top: 10%;
+                    left: 20%;
+                }
+            }
+
+            //info image trumpet
+
+            &.green {
+                background-color: #55DFB4;
+
+                img {
+                    position: relative;
+                    left: -10%;
+                    height: 180px;
+                }
+            }
+        }
+    }
+}

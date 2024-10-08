@@ -1,0 +1,137 @@
+//article pricing
+
+.pricing {
+    text-align: center;
+    width: 100%;
+
+    &__title {
+        font-family: "Raleway", sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    &__content {
+        width: 100%;
+
+        //princing buttons
+
+        button {
+            border-radius: 23px;
+            padding: 20px 70px;
+            transform: translateY(-15%);
+            border: none;
+            color: white;
+            cursor: pointer;
+
+            &.red {
+                background-color: #EB476E;
+                transform: translateY(-30%);
+            }
+
+            &.blue {
+                background-color: #07ACE6;
+            }
+
+            &.green {
+                background-color: #55DFB4;
+            }
+        }
+
+        //pricing items
+
+        &__item {
+            margin: 10%;
+            border-radius: 1em;
+            margin-bottom: 15%;
+            height: 250px;
+
+            &.red {
+                border: 1px solid #EB476E;
+            }
+
+            &.blue {
+                border: 1px solid #07ACE6;
+            }
+
+            &.green {
+                border: 1px solid #55DFB4;
+            }
+
+            &__half {
+                width: 49%;
+                display: inline-block;
+                text-align: center;
+                position: relative;
+
+                &--title {
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin: 0;
+
+                    &.red {
+                        margin-bottom: 25px;
+                    }
+
+                }
+
+                &--price {
+                    margin: 0;
+                    position: relative;
+                    top: -50px;
+                    top: 0px;
+                    font-family: "Open Sans", sans-serif;
+                    font-weight: 300;
+                    font-size: 46px;
+                    line-height: 64px;
+
+                    &.red {
+                        color: #EB476E;
+                        top: -30px;
+                    }
+
+                    &.blue {
+                        color: #07ACE6;
+                    }
+
+                    &.green {
+                        color: #55DFB4;
+                    }
+                }
+
+                &--text {
+                    position: relative;
+                    top: -15px;
+                    font-family: "Raleway", sans-serif;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 14px;
+                }
+
+                ul {
+                    text-align: center;
+                    list-style: none;
+                    padding: 0;
+                    margin: 3em 0;
+
+                    li {
+                        font-family: "Open Sans", sans-serif;
+                        margin: 10px;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 19px;
+                        text-align: start;
+                        width: 100%;
+
+                        .checkbox,
+                        .cross {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
