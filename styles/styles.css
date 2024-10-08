@@ -118,6 +118,7 @@ body {
   font-weight: 800;
   font-size: 20px;
   letter-spacing: 8px;
+  color: black;
 }
 .sales__content__item p {
   margin-top: 15px;
@@ -130,6 +131,7 @@ body {
   font-size: 20px;
   letter-spacing: 3px;
   width: 100%;
+  color: #A5A5A5;
 }
 .sales__content__item--redCircle {
   position: absolute;
@@ -282,7 +284,7 @@ body {
     margin: 5em 25em;
     display: flex;
     height: 350px;
-    justify-content: space-around;
+    justify-content: center;
     border-radius: 1px;
   }
   .info__article.red {
@@ -292,6 +294,7 @@ body {
     margin: 5em 0;
     width: 420px;
     margin-left: 1.5em;
+    margin-right: 5em;
     border-bottom: 4px solid #EB476E;
   }
   .info__article__text.blue {
@@ -308,7 +311,9 @@ body {
   .info__article__text.green {
     border-bottom: 4px solid #55DFB4;
     height: 220px;
+    margin-left: 4em;
     margin-top: 3em;
+    margin-right: 11em;
   }
   .info__article__text h1 {
     margin-bottom: 1em;
@@ -319,7 +324,7 @@ body {
   }
   .info__article__item.blue {
     margin-top: 0;
-    margin-left: 3em;
+    margin-left: 5em;
     height: 200px;
   }
   .info__article__item--mac--red {
