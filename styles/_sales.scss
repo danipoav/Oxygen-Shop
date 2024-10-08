@@ -1,0 +1,131 @@
+//section sales
+
+.sales {
+    text-align: center;
+    margin: 0 10%;
+
+    &__title {
+        font-family: "Raleway", sans-serif;
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    &__content {
+        margin-bottom: 15%;
+
+        &__item {
+            margin: 0 auto;
+            position: relative;
+            width: 200px;
+            height: 200px;
+
+            .views {
+                position: absolute;
+                top: 55%;
+                left: 5%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 800;
+                font-size: 20px;
+                letter-spacing: 8px;
+            }
+
+            p {
+                margin-top: 15px;
+                position: absolute;
+                border: 0;
+                top: 70%;
+                left: 0%;
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: 3px;
+                width: 100%;
+            }
+
+            //Red Item
+
+            &--redCircle {
+                position: absolute;
+                left: 33%;
+                top: 30%;
+            }
+
+            &--redBody {
+                .body {
+                    position: absolute;
+                    top: 50%;
+                }
+
+                .head {
+                    position: absolute;
+                    top: 35%;
+                    left: 55%;
+                }
+            }
+
+            //Blue circle
+
+            &--blueCircle {
+                position: absolute;
+                left: 33%;
+                top: 30%;
+            }
+
+            &--blueEye {
+                .large {
+                    position: absolute;
+                    top: 36%;
+                    left: 43%;
+                }
+
+                .medium {
+                    position: absolute;
+                    top: 38%;
+                    left: 53%;
+                }
+
+                .small {
+                    position: absolute;
+                    top: 42%;
+                    left: 57%;
+
+                }
+            }
+
+            //greenCircle
+
+            &--greenCircle {
+                position: absolute;
+                left: 33%;
+                top: 30%;
+            }
+
+            &--greenBox {
+                &--small {
+                    position: absolute;
+                    top: 32%;
+                    left: 53%;
+                }
+
+                &--medium {
+                    position: absolute;
+                    top: 34%;
+                    left: 51%;
+                }
+
+                &--large {
+                    position: absolute;
+                    top: 36%;
+                    left: 50%;
+                }
+
+                &--box {
+                    position: absolute;
+                    top: 38%;
+                    left: 50%;
+                }
+            }
+
+        }
+    }
+}

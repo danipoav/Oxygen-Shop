@@ -1,0 +1,11 @@
+//section background
+
+.background-img {
+    background-image: url('../images/BackgroundLaptop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    //lo dejo asi porque es la unica medida que se me adapta a la pantalla, al view-width de la screen
+    height: 265px;
+    background-position: center;
+}

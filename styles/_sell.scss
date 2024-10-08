@@ -1,0 +1,35 @@
+//Section sell
+
+.section__sell {
+    margin: 5em auto;
+    box-sizing: border-box;
+    text-align: center;
+    max-width: 80%;
+    width: 100%;
+    margin-bottom: 2em;
+
+    &__title {
+        font-family: "Raleway", sans-serif;
+        font-size: 2em;
+        font-weight: 400;
+    }
+
+    &__text {
+        font-family: "Open Sans", sans-serif;
+        padding: 0 15%;
+        font-weight: 500;
+        margin: 2em 0;
+    }
+
+    &__button {
+        &.open {
+            cursor: pointer;
+            background-color: #08A6E4;
+            color: white;
+            border-radius: 40px;
+            padding: 1.5em 2em;
+            width: 100%;
+            border: none;
+        }
+    }
+}

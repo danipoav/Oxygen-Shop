@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    box-sizing: border-box
+}
+
+@import "header.scss";
+@import "sell.scss";
+@import "background.scss";
+@import "sales.scss";
+@import "info.scss";
+@import "pricing.scss";
+@import "form.scss";
+@import "footer.scss";
+@import "mediaQuerys.scss";
