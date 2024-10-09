@@ -30,6 +30,7 @@
             display: inline-block;
             margin: 0;
             vertical-align: middle;
+            color: #A5A5A5;
         }
 
         &.logo {
@@ -38,10 +39,15 @@
             vertical-align: middle;
             margin-bottom: 1.5em;
 
+            a {
+                text-decoration: none;
+            }
+
             img {
                 display: inline-block;
                 vertical-align: middle;
                 margin-left: 15px;
+                width: 25px;
             }
         }
 
