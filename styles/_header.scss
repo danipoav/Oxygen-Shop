@@ -41,6 +41,7 @@
         box-sizing: border-box;
 
         &__list {
+            cursor: pointer;
             padding-right: 10%;
             display: flex;
             justify-content: center;

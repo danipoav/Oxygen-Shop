@@ -51,6 +51,7 @@ body {
     box-sizing: border-box;
   }
   .header__nav__list {
+    cursor: pointer;
     padding-right: 10%;
     display: flex;
     justify-content: center;
@@ -433,6 +434,7 @@ body {
   background-color: #55DFB4;
 }
 .pricing__content__item {
+  cursor: pointer;
   margin: 10%;
   border-radius: 1em;
   margin-bottom: 15%;
