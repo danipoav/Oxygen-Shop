@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -20,12 +21,15 @@
 
         <div class="header__nav">
             <h1 class="header__nav--title">OXYGENShop</h1>
-            <div class="header__nav__images">
+
+            <div id="menu-icon" class="header__nav__images" onclick="showMenu()">
+                <div class="header__nav__images--closeIcon">X</div>
                 <img src="images/nav1.png" alt="line">
                 <img src="images/nav2.png" alt="line">
                 <img src="images/nav3.png" alt="line">
             </div>
-            <ul class="header__nav__list">
+
+            <ul id="menu-list" class="header__nav__list">
                 <li>Why us</li>
                 <li>Benefits</li>
                 <li>Prices</li>

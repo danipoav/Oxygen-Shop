@@ -10,15 +10,53 @@
         display: none;
     }
 
+    &__list.active {
+        display: block;
+        list-style: none;
+        font-family: "Open Sans", sans-serif;
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 15px;
+        letter-spacing: 3.2799999713897705px;
+        text-transform: uppercase;
+        padding-left: 12%;
+        padding-bottom: 10px;
+        margin: 0;
+
+        li {
+            margin-bottom: 1em;
+        }
+    }
+
     &__images {
         margin-right: 10%;
         position: absolute;
         right: 0;
         top: 27px;
+        cursor: pointer;
 
         img {
             display: block;
             margin-bottom: 5px;
+        }
+
+        &.active img {
+            display: none;
+        }
+
+        &--closeIcon {
+            display: none;
+            
+        }
+
+        &.active &--closeIcon {
+            display: block;
+            color: #08A6E4;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 25px;
+            text-align: center;
         }
     }
 
