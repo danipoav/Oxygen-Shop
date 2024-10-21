@@ -15,8 +15,10 @@ body {
   }
 }
 .progress-container {
-  width: 100%; /* Ajusta esto según tu diseño */
-  background-color: transparent; /* Color de fondo de la barra */
+  width: 100%;
+  /* Ajusta esto según tu diseño */
+  background-color: transparent;
+  /* Color de fondo de la barra */
   height: 5px;
   position: fixed;
   z-index: 10;
@@ -24,7 +26,7 @@ body {
 .progress-container--bar {
   height: 100%;
   background-color: #08A6E4;
-  width: 50%;
+  width: 0;
 }
 
 .header__nav {
