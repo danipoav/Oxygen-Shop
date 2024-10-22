@@ -235,14 +235,14 @@
             </div>
         </div>
 
-        <form class="form__data" action="#">
+        <form class="form__data" id="form">
             <label class="form__data--label" for="name">name</label>
-            <input class="form__data--input" type="text" name="name">
+            <input class="form__data--input" type="text" name="name" id="name">
             <label class="form__data--label" for="email">email</label>
-            <input class="form__data--input" type="email" name="email">
+            <input class="form__data--input" type="email" name="email" id="email">
 
             <div class="form__data__checkbox">
-                <input type="checkbox" name="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox">
                 <label for="checkbox">I hereby give consent for my personal data included in my application to be
                     processed
                     for the purposes of the recruitment process under the European Parliament’s and Council of the
@@ -254,10 +254,14 @@
             </div>
 
             <div class="form__data--button-container">
-                <button>Send</button>
+                <button type="submit">Send</button>
             </div>
         </form>
     </section>
+
+    <div class="container__top">
+        <button class="container__top--button" id="return--top" onclick="returnTop()">Return to the top</button>
+    </div>
 
     <footer class="footer">
 

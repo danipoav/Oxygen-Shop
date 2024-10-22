@@ -1,16 +1,26 @@
 //header section
 
+<<<<<<< HEAD
 .progress-container{
     width: 100%;  
     background-color: transparent;  
+=======
+.progress-container {
+    width: 100%;
+    background-color: transparent;
+>>>>>>> main
     height: 5px;
     position: fixed;
     z-index: 10;
 
-    &--bar{
+    &--bar {
         height: 100%;
         background-color: #08A6E4;
+<<<<<<< HEAD
         width: 0%;
+=======
+        width: 0;
+>>>>>>> main
     }
 
 }
@@ -61,7 +71,7 @@
 
         &--closeIcon {
             display: none;
-            
+
         }
 
         &.active &--closeIcon {
