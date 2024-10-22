@@ -55,6 +55,10 @@
             margin: 2em 0;
         }
 
+        &--input.error {
+            border-bottom: 1px solid red;
+        }
+
         &--label {
             display: block;
             font-family: "Open Sans", sans-serif;
@@ -85,6 +89,7 @@
                 font-size: 12px;
                 line-height: 16px;
                 color: #707070;
+                padding: 1.5px;
             }
         }
 
@@ -111,10 +116,36 @@
     }
 }
 
+.container__top {
+    text-align: right;
+    margin-right: 10%;
+
+    &--button {
+        cursor: pointer;
+        padding: 20px 50px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 35px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 17px;
+        margin-bottom: 2em;
+    }
+}
+
 @media only screen and (min-width: 1000px) {
+
+    .container__top {
+        text-align: center;
+        margin: 0;
+    }
+
     .form {
         margin: 6% 25%;
         display: flex;
+        margin-bottom: 3em;
 
         &__item {
             width: 50%;
