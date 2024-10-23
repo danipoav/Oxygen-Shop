@@ -26,18 +26,75 @@ body {
   width: 0;
 }
 
-.progress-container {
-  width: 100%;
-  background-color: transparent;
-  height: 5px;
+.modal {
   position: fixed;
-  z-index: 10;
-}
-.progress-container--bar {
+  top: 0;
+  left: 0;
+  z-index: 16;
+  width: 100%;
   height: 100%;
-  background-color: #08A6E4;
-  width: 0%;
-  width: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.modal__content {
+  background-color: white;
+  border: 1px solid black;
+  text-align: center;
+  width: 70%;
+  max-width: 400px;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+  margin: auto;
+  padding: 20px;
+}
+.modal__content__cross {
+  text-align: right;
+  padding-bottom: 0.5em;
+}
+.modal__content__cross img {
+  width: 7.5%;
+}
+.modal__content--title {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0;
+  margin-bottom: 1em;
+}
+.modal__content__form {
+  text-align: left;
+  padding: 20px;
+}
+.modal__content__form input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.modal__content__form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.modal__content__form__button {
+  text-align: center;
+}
+.modal__content__form__button--button {
+  margin-top: 2em;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 35px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  right: 20px;
+  padding: 10px 20px;
 }
 
 .header__nav {
