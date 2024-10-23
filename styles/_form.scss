@@ -118,20 +118,27 @@
 
 .container__top {
     text-align: right;
-    margin-right: 10%;
 
     &--button {
+        display: none;
         cursor: pointer;
-        padding: 20px 50px;
+        z-index: 15;
+        width: 40px;
+        height: 40px;
         background-color: black;
         color: white;
         border: none;
         border-radius: 35px;
         font-family: "Open Sans", sans-serif;
-        font-weight: 700;
-        font-size: 13px;
-        line-height: 17px;
-        margin-bottom: 2em;
+        font-size: 15px;
+        position: fixed;
+        bottom: 60px;
+        right: 20px;
+        padding-bottom: 5px;
+    }
+
+    &--button.active {
+        display: block;
     }
 }
 
@@ -189,6 +196,15 @@
                     margin-top: 3em;
                 }
             }
+        }
+    }
+
+    .container__top {
+        &--button {
+            font-size: 30px;
+            width: 60px;
+            height: 60px;
+            padding-bottom: 10px;
         }
     }
 }

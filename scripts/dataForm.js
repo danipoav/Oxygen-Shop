@@ -1,48 +1,6 @@
-
-//Funcion menu desplegable
-
-const showMenu = () => {
-
-    const menuList = document.getElementById('menu-list');
-    const menuOpen = menuList.classList.toggle('active');
-    const menuIcon = document.getElementById('menu-icon');
-
-    if (menuOpen) {
-        menuIcon.classList.add('active');
-    } else {
-        menuIcon.classList.remove('active');
-    }
-
-}
-
-const returnTop = () => {
-    setTimeout(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        })
-    }, 200)
-}
-
-//funcion barra progresiva
-
-const updateProgressBar = () => {
-    const progressBar = document.getElementById('progressBar')
-
-    const scrollHeight = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
-
-    const progress = (scrollHeight / (documentHeight - windowHeight)) * 100;
-
-    progressBar.style.width = progress + '%';
-}
-
-window.addEventListener('scroll', updateProgressBar);
-
 //funcion enviar datos del formulario a una API
 
-document.getElementById('form').addEventListener('submit', (event) => {
+export function sendData(event) {
 
     event.preventDefault();
 
@@ -68,11 +26,10 @@ document.getElementById('form').addEventListener('submit', (event) => {
     }
 
     if (!checkbox.checked) {
-        checkbox.nextElementSibling.style.border = '1px solid red';
+        checkbox.style.boxShadow = '0 0 0 0.1rem red';
         valid = false;
     } else {
-        checkbox.nextElementSibling.style.border = '';
-
+        checkbox.style.boxShadow = '';
     }
 
     if (valid) {
@@ -99,12 +56,12 @@ document.getElementById('form').addEventListener('submit', (event) => {
                     name.value = ''
                     email.value = ''
                     checkbox.checked = false
-                })
+                })//catch
             } else {
                 throw new Error('status error')
             }
-        })
+        })//catch
 
     }
 
-})
+}
