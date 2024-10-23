@@ -1,14 +1,10 @@
 //header section
 
-<<<<<<< HEAD
-.progress-container{
-    width: 100%;  
-    background-color: transparent;  
-=======
+
+
 .progress-container {
     width: 100%;
     background-color: transparent;
->>>>>>> main
     height: 5px;
     position: fixed;
     z-index: 10;
@@ -16,11 +12,8 @@
     &--bar {
         height: 100%;
         background-color: #08A6E4;
-<<<<<<< HEAD
         width: 0%;
-=======
         width: 0;
->>>>>>> main
     }
 
 }
@@ -60,28 +53,23 @@
         top: 27px;
         cursor: pointer;
 
-        img {
+        &--closeIcon {
+            display: none;
+        }
+
+        &--navbar {
             display: block;
             margin-bottom: 5px;
         }
 
-        &.active img {
+        &.active &--navbar {
             display: none;
         }
 
-        &--closeIcon {
-            display: none;
-
-        }
 
         &.active &--closeIcon {
             display: block;
-            color: #08A6E4;
-            cursor: pointer;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 25px;
-            text-align: center;
+
         }
     }
 
@@ -133,6 +121,8 @@
                 background-color: #08A6E4;
             }
         }
+
+
 
         &__images {
             display: none;

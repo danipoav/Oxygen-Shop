@@ -1,3 +1,6 @@
+
+//Funcion menu desplegable
+
 const showMenu = () => {
 
     const menuList = document.getElementById('menu-list');
@@ -21,6 +24,8 @@ const returnTop = () => {
     }, 200)
 }
 
+//funcion barra progresiva
+
 const updateProgressBar = () => {
     const progressBar = document.getElementById('progressBar')
 
@@ -34,6 +39,8 @@ const updateProgressBar = () => {
 }
 
 window.addEventListener('scroll', updateProgressBar);
+
+//funcion enviar datos del formulario a una API
 
 document.getElementById('form').addEventListener('submit', (event) => {
 
@@ -69,9 +76,35 @@ document.getElementById('form').addEventListener('submit', (event) => {
     }
 
     if (valid) {
-        console.log('formulario valido')
+
+        const formValues = {
+            name: name.value,
+            email: email.value,
+            terms: checkbox.checked
+        }
 
         const URL = 'https://jsonplaceholder.typicode.com/posts'
+
+        fetch(URL, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formValues)
+        }).then((response) => {
+            if (response.status === 201 || response.ok) {
+                response.json().then(data => {
+                    console.log('succes:', data);
+                    alert('Data sent successfully')
+                    name.value = ''
+                    email.value = ''
+                    checkbox.checked = false
+                })
+            } else {
+                throw new Error('status error')
+            }
+        })
+
     }
 
 })

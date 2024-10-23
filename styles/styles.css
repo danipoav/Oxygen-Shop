@@ -23,11 +23,21 @@ body {
 .progress-container--bar {
   height: 100%;
   background-color: #08A6E4;
-<<<<<<< HEAD
-  width: 0%;
-=======
   width: 0;
->>>>>>> main
+}
+
+.progress-container {
+  width: 100%;
+  background-color: transparent;
+  height: 5px;
+  position: fixed;
+  z-index: 10;
+}
+.progress-container--bar {
+  height: 100%;
+  background-color: #08A6E4;
+  width: 0%;
+  width: 0;
 }
 
 .header__nav {
@@ -61,24 +71,18 @@ body {
   top: 27px;
   cursor: pointer;
 }
-.header__nav__images img {
+.header__nav__images--closeIcon {
+  display: none;
+}
+.header__nav__images--navbar {
   display: block;
   margin-bottom: 5px;
 }
-.header__nav__images.active img {
-  display: none;
-}
-.header__nav__images--closeIcon {
+.header__nav__images.active .header__nav__images--navbar {
   display: none;
 }
 .header__nav__images.active .header__nav__images--closeIcon {
   display: block;
-  color: #08A6E4;
-  cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 25px;
-  text-align: center;
 }
 .header__nav--title {
   text-align: left;
