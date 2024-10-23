@@ -12,7 +12,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <script defer src="script.js"></script>
+    <script defer type="module" src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
         <div class="header__nav">
             <h1 class="header__nav--title">OXYGENShop</h1>
 
-            <div id="menu-icon" class="header__nav__images" onclick="showMenu()">
+            <div id="menu-icon" class="header__nav__images">
                 <img src="images/VectorBlue.png" class="header__nav__images--closeIcon" />
                 <img src="images/nav1.png" class="header__nav__images--navbar" alt="line">
                 <img src="images/nav2.png" class="header__nav__images--navbar" alt="line">
@@ -260,7 +260,7 @@
     </section>
 
     <div class="container__top">
-        <button class="container__top--button" id="return--top" onclick="returnTop()">Return to the top</button>
+        <button class="container__top--button" id="return--top">&#x2191;</button>
     </div>
 
     <footer class="footer">
