@@ -10,7 +10,6 @@ export const returnTop = () => {
 export function buttonAppearance() {
 
     const button = document.getElementById('return--top');
-    console.log('sape')
     const scrollHeight = window.scrollY;
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;

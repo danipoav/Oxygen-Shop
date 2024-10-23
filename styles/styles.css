@@ -454,6 +454,18 @@ body {
   font-size: 36px;
   line-height: 42px;
 }
+.pricing__coin label {
+  font-family: "Raleway", sans-serif;
+  margin-right: 0.3em;
+  font-size: 1.2em;
+}
+.pricing__coin select {
+  background-color: #D3D3D3;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid black;
+}
 .pricing__content {
   width: 100%;
 }
@@ -558,6 +570,7 @@ body {
 @media only screen and (min-width: 1000px) {
   .pricing__title {
     margin-top: 3em;
+    margin-bottom: 1em;
   }
   .pricing__content {
     display: flex;

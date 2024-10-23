@@ -157,12 +157,21 @@
 
         <h1 class="pricing__title">Pricing</h1>
 
+        <div class="pricing__coin">
+            <label for="coin">Select type</label>
+            <select name="coin" id="coin">
+                <option value="eur">EUR</option>
+                <option value="usd" selected>USD</option>
+                <option value="gbp">GBP</option>
+            </select>
+        </div>
+
         <div class="pricing__content">
 
             <article class="pricing__content__item red">
                 <div class="pricing__content__item__half">
                     <h1 class="pricing__content__item__half--title red">Basic</h1>
-                    <p class="pricing__content__item__half--price red">$0</p>
+                    <p class="pricing__content__item__half--price red" id="red-price">$0</p>
                 </div>
                 <div class="pricing__content__item__half">
                     <ul>
@@ -179,7 +188,7 @@
             <article class="pricing__content__item blue">
                 <div class="pricing__content__item__half">
                     <h1 class="pricing__content__item__half--title">Professional</h1>
-                    <p class="pricing__content__item__half--price blue">$25</p>
+                    <p class="pricing__content__item__half--price blue" id="blue-price">$25</p>
                     <p class="pricing__content__item__half--text">Limited offer</p>
                 </div>
                 <div class="pricing__content__item__half">
@@ -197,7 +206,7 @@
             <article class="pricing__content__item green">
                 <div class="pricing__content__item__half">
                     <h1 class="pricing__content__item__half--title">Premium</h1>
-                    <p class="pricing__content__item__half--price green">$60</p>
+                    <p class="pricing__content__item__half--price green" id="green-price">$60</p>
                     <p class="pricing__content__item__half--text">Limited offer</p>
                 </div>
                 <div class="pricing__content__item__half">
