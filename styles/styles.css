@@ -73,6 +73,9 @@ body {
   border: none;
   border-bottom: 1px solid black;
 }
+.modal__content__form input.error {
+  border-bottom: 1px solid red;
+}
 .modal__content__form label {
   display: block;
   margin-bottom: 0.5em;
@@ -793,7 +796,7 @@ body {
   border: none;
   border-radius: 35px;
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   position: fixed;
   bottom: 60px;
   right: 20px;
