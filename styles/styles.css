@@ -698,6 +698,47 @@ body {
     margin: 1.5em 0;
   }
 }
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0;
+  background-color: black;
+}
+.slider button {
+  position: absolute;
+  top: 47.5%;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+.slider--prev {
+  left: 0;
+}
+.slider--prev img {
+  width: 30px;
+}
+.slider--next {
+  right: 0;
+}
+.slider--next img {
+  width: 30px;
+}
+.slider__content {
+  display: flex;
+}
+.slider__content--img {
+  display: none;
+  width: 100%;
+}
+.slider__content--img.active {
+  display: block;
+}
+
 .form {
   box-sizing: border-box;
   margin: 15% 10%;
