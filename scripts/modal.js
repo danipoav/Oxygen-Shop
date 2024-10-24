@@ -8,7 +8,7 @@ export function showModal() {
 export function closeModal(event) {
     const modal = document.getElementById('modal');
 
-    if (event.target === modal || event.target.id === 'crossModal') {
+    if (event.target === modal || event.target.id === 'crossModal' || event.key === 'Escape') {
         modal.classList.remove('active')
         localStorage.setItem('modalClosed', 'true')
     }
@@ -26,9 +26,12 @@ export function showModalScroll() {
 }
 
 export function showModalWindow() {
-    if (!localStorage.getItem('modalClosed')) {
-        setTimeout(showModal, 5000);
-    }
+    setTimeout(function () {
+        if (!localStorage.getItem('modalClosed')) {
+            showModal();
+        }
+    }, 5000)
+
 }
 
 export function sendDataModal(event) {
@@ -67,11 +70,15 @@ export function sendDataModal(event) {
                     email.value = ''
                     modal.classList.remove('active')
                     localStorage.setItem('modalClosed', 'true')
-                })//catch
+                }).catch(error => {
+                    console.log('Error:', error)
+                })
             } else {
                 throw new Error('status error')
             }
-        })//catch
+        }).catch(error => {
+            console.log('Error:', error)
+        })
 
     }
 

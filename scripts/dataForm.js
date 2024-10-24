@@ -56,11 +56,15 @@ export function sendData(event) {
                     name.value = ''
                     email.value = ''
                     checkbox.checked = false
-                })//catch
+                }).catch(error => {
+                    'Error: ', error
+                })
             } else {
                 throw new Error('status error')
             }
-        })//catch
+        }).catch(error => {
+            'Error: ', error
+        })
 
     }
 
