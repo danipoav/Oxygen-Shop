@@ -1,4 +1,5 @@
 .modal {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -79,4 +80,8 @@
         }
 
     }
+}
+
+.modal.active {
+    display: block;
 }
