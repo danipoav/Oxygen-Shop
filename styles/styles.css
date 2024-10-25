@@ -703,7 +703,7 @@ body {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px 0 0px 0;
   background-color: black;
 }
 .slider button {
@@ -737,6 +737,19 @@ body {
 }
 .slider__content--img.active {
   display: block;
+}
+.slider__dots {
+  display: flex;
+  text-align: center;
+  padding: 1.5em 0;
+  justify-content: center;
+}
+.slider__dots--img {
+  width: 5%;
+  margin: 0 3px;
+}
+.slider__dots img.active {
+  content: url("../images/circle-slideBlue.png");
 }
 
 .form {
