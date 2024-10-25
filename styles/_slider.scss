@@ -1,0 +1,64 @@
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 0 0px 0;
+    background-color: black;
+
+    button {
+        position: absolute;
+        top: 47.5%;
+        cursor: pointer;
+        background-color: transparent;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 50px;
+    }
+
+    &--prev {
+        left: 0;
+
+        img {
+            width: 30px;
+        }
+    }
+
+    &--next {
+        right: 0;
+
+        img {
+            width: 30px;
+        }
+    }
+
+    &__content {
+        display: flex;
+
+        &--img {
+            display: none;
+            width: 100%;
+        }
+
+        &--img.active {
+            display: block;
+        }
+    }
+
+    &__dots {
+        display: flex;
+        text-align: center;
+        padding: 1.5em 0;
+        justify-content: center;
+
+        &--img {
+            width: 5%;
+            margin: 0 3px;
+        }
+        img.active{
+            content: url('../images/circle-slideBlue.png')
+        }
+
+    }
+}

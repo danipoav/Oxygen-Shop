@@ -698,6 +698,60 @@ body {
     margin: 1.5em 0;
   }
 }
+.slider {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 60px 0 0px 0;
+  background-color: black;
+}
+.slider button {
+  position: absolute;
+  top: 47.5%;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 50px;
+}
+.slider--prev {
+  left: 0;
+}
+.slider--prev img {
+  width: 30px;
+}
+.slider--next {
+  right: 0;
+}
+.slider--next img {
+  width: 30px;
+}
+.slider__content {
+  display: flex;
+}
+.slider__content--img {
+  display: none;
+  width: 100%;
+}
+.slider__content--img.active {
+  display: block;
+}
+.slider__dots {
+  display: flex;
+  text-align: center;
+  padding: 1.5em 0;
+  justify-content: center;
+}
+.slider__dots--img {
+  width: 5%;
+  margin: 0 3px;
+}
+.slider__dots img.active {
+  content: url("../images/circle-slideBlue.png");
+}
+
 .form {
   box-sizing: border-box;
   margin: 15% 10%;

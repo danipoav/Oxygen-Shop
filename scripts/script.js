@@ -5,7 +5,7 @@ import { returnTop, buttonAppearance } from "./buttonTop.js"
 import { sendData } from "./dataForm.js";
 import { currentCoin } from "./currentCoin.js";
 import { showModalScroll, closeModal, showModalWindow, sendDataModal } from "./modal.js";
-
+import { Slider } from "../class/class-Slider.js";
 
 //ShowMenu
 document.getElementById('menu-icon').addEventListener('click', menuDesplegable)
@@ -31,4 +31,5 @@ document.getElementById('formModal').addEventListener('submit', sendDataModal)
 window.addEventListener('keydown', closeModal)
 showModalWindow();
 
-//Slider functions 
+//calling Slider class 
+new Slider('slider')
