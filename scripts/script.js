@@ -33,3 +33,9 @@ showModalWindow();
 
 //calling Slider class 
 new Slider('slider')
+
+//localStorageitem remove when reload page
+
+document.addEventListener('DOMContentLoaded', () =>{
+    localStorage.removeItem('modalClosed')
+})
