@@ -30,9 +30,7 @@ export class Slider {
 
     createDots() {
         for (let i = 0; i < this.slideImg.length; i++) {
-            const dot = document.createElement('img')
-            dot.src = 'images/whiteDot.slide.jpg'
-            dot.alt = 'circleSlide'
+            const dot = document.createElement('span')
             dot.classList.add('slider__dots--img')
             if (i === 0) {
                 dot.classList.add('active')

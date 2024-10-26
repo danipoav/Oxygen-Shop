@@ -4,6 +4,7 @@
     box-sizing: border-box;
     margin: 15% 10%;
     margin-bottom: 10%;
+    margin-top: 30px;
 
     &__item {
         width: 100%;
@@ -123,22 +124,22 @@
         display: none;
         cursor: pointer;
         z-index: 15;
-        width: 40px;
-        height: 40px;
-        background-color: black;
-        color: white;
         border: none;
-        border-radius: 35px;
-        font-family: "Open Sans", sans-serif;
-        font-size: 20px;
         position: fixed;
         bottom: 60px;
         right: 20px;
-        padding-bottom: 5px;
+        width: 40px;
+        background-color: transparent;
+
+        img {
+            text-align: right;
+            width: 100%;
+        }
     }
 
     &--button.active {
         display: block;
+        padding: 0;
     }
 }
 
@@ -153,6 +154,7 @@
         margin: 6% 25%;
         display: flex;
         margin-bottom: 3em;
+        margin-top: 5em;
 
         &__item {
             width: 50%;
