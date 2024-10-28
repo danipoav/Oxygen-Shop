@@ -766,11 +766,11 @@ body {
   justify-content: center;
 }
 .slider__dots span {
-  width: 12px;
-  height: 12px;
+  width: 7px;
+  height: 7px;
   border-radius: 50%;
   background-color: grey;
-  margin: 0 3px;
+  margin: 0 4px;
 }
 .slider__dots span.active {
   background-color: white;
@@ -792,6 +792,10 @@ body {
   }
   .slider__dots {
     padding-top: 3em;
+  }
+  .slider__dots span {
+    width: 10px;
+    height: 10px;
   }
 }
 .form {
