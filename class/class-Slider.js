@@ -12,6 +12,8 @@ export class Slider {
         this.dotContainer = document.querySelector('.slider__dots')
         this.createDots()
 
+        setInterval(() => this.nextSlide(), 5000)
+
     }
 
     nextSlide() {

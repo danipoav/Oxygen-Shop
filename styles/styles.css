@@ -567,6 +567,9 @@ body {
   border-radius: 5px;
   cursor: pointer;
   border: 2px solid black;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
 }
 .pricing__content {
   width: 100%;

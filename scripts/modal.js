@@ -34,6 +34,12 @@ export function showModalWindow() {
 
 }
 
+export const notNumber = (event) => {
+    if (event.key >= '0' && event.key <= '9') {
+        event.preventDefault();
+    }
+}
+
 export function sendDataModal(event) {
 
     const modal = document.getElementById('modal');
